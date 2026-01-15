@@ -1,7 +1,7 @@
 # 'Drum Pad Triggering System' for MIDI Usage - 1985
 
 This repository documents a sub-project I designed and built in December 1985 to simulate SIMMONS electronic drum pads, "on the cheap" ($20 in parts
-compared to $1500). The intent was to design a drum pad physical interface which would provide digital triggers to my then-new Colossus Computer Computer which itself would then create MIDI messages for a Roland TR-707 drum machine. Overall, all goals were met and the system was deemed useful and functional.
+compared to $1500). The intent was to design a physical drum pad interface which would provide digital triggers to my then-new Colossus Computer Computer which itself would create MIDI messages for a Roland TR-707 drum machine. Overall, all goals were met and the system was deemed useful and functional.
 
 <div style="text-align:center">
 <img src="/Images/Drum Pads System.jpg" alt="" style="width:75%; height:auto;">
@@ -22,7 +22,7 @@ The following shows a simplistic overview of how the system was structured:
 Each "drum pad" was made from a Nordica cottage cheese plastic container, painted shiny black. Inside and mounted to the inner top was a small pickup microphone. Its raw signal was processed by a differential compator, amplifier and rectifier circuit. The output digital trigger was then sent to a Z80-based PIO chip which created a software interrupt in the Z80 handler assembler code. 
 
 The interrupt handler would choose one of nine pre-determined MIDI NOTE-ON (drum #) codes, a velocity code (0= no 
-sound, 140 = maximum output), and the MIDI channel number. The MIDI channel would allow multiple drum machines/synthesizers to be 
+sound, 140 = maximum output) and the MIDI channel number. The MIDI channel would allow multiple drum machines/synthesizers to be 
 attached to the same MIDI bus, so the pads could be assigned (to say) 3 toms, 1 symbal and 1 snare drum on the drum machine, then 3 
 notes on a synthesizer programmed for SIMMONS toms (a well known electronic drum sound). Or all the pads could be assigned to 
 different pitches of the synthesizer set up with a tom sound, so you effectively have 9 drum toms all the same but at different pitches.
@@ -73,7 +73,7 @@ is crossed then the output swings to the +ve rail which is then differentiated t
 and is sent to the Z80-PIO which is programmed to interrupt on the rising edge of the pulse. 
 
 <div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - amplified and rectified output.jpg" alt="" style="width50%; height:auto;">
+<img src="/Images/Piezo-Electric cystal output - amplified and rectified output.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 <div style="text-align:center">
