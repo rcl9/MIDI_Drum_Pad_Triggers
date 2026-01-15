@@ -4,6 +4,10 @@ This repository documents a sub-project I designed and built in December 1985 to
 compared to $1500). The intent was to design a drum pad physical interface which would provide digital triggers to my then-new Colossus Computer Computer which itself would then create MIDI messages for a Roland TR-707 drum machine. Overall, all goals were met and the system was deemed useful and functional.
 
 <div style="text-align:center">
+<img src="/Images/Drum Pads System.jpg" alt="" style="width:75%; height:auto;">
+</div>
+
+<div style="text-align:center">
 <img src="/Images/Electronics trigger interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
 </div>
 
@@ -35,13 +39,13 @@ from the edge triggered Z80-PIO input port B.
 Nine cloned circuits were built across 3 prototyping boards:
 
 <div style="text-align:center">
-<img src="/Schematics/Electronics trigger interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Electronics trigger interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
 </div>
 
 Of which this shows a close-up of a single processing circuit:
 
 <div style="text-align:center">
-<img src="/Schematics/Close-up of one interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Close-up of one interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
 </div>
 
 ## Research and Development
@@ -60,10 +64,6 @@ velocity) and the piezo transducer was used for a demonstration pickup which whe
 
 <div style="text-align:center">
 <img src="/Images/Piezo-Electric cystal output - crystal hit directly.jpg" alt="" style="width:75%; height:auto;">
-</div>
-
-<div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - amplified and rectified output.jpg" alt="" style="width:75%; height:auto;">
 </div>
 
 Referring to the circuit shown above, the microphone sensor's output is differentiated by an op-amp to produce to a short spike which is then amplified and rectified by the Superdiode IC1a. This spike quickly charges the tantalum cap then slowly discharges through the 4.7k (TC = 70msec). The output 
