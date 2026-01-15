@@ -1,7 +1,7 @@
 # 'Drum Pad Triggering System' for MIDI Usage - 1985
 
 This repository documents a sub-project I designed and built in December 1985 to simulate SIMMONS electronic drum pads, "on the cheap" ($20 in parts
-compared to $1500). The intent was to design a physical drum pad interface which would provide digital triggers to my then-new Colossus Computer Computer which itself would create MIDI messages for a Roland TR-707 drum machine. Overall, all goals were met and the system was deemed useful and functional.
+compared to $1500). The intent was to design a physical drum pad interface which would provide digital triggers to my then-new [Colossus Computer Computer](https://github.com/rcl9/Colossus_Control_Computer) which itself would create MIDI messages for a Roland TR-707 drum machine. Overall, all goals were met and the system was deemed useful and functional.
 
 <div style="text-align:center">
 <img src="/Images/Drum Pads System.jpg" alt="" style="width:75%; height:auto;">
