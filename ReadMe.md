@@ -16,7 +16,7 @@ compared to $1500). The intent was to design a drum pad physical interface which
 The following shows a simplistic overview of how the system was structured:
 
 <div style="text-align:center">
-<img src="/Images/Drum pads block diagram.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Drum pads block diagram.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 Each "drum pad" was made from a Nordica cottage cheese plastic container, painted shiny black. Inside and mounted to the inner top was a small pickup microphone. Its raw signal was processed by a differential compator, amplifier and rectifier circuit. The output digital trigger was then sent to a Z80-based PIO chip which created a software interrupt in the Z80 handler assembler code. 
@@ -30,7 +30,7 @@ different pitches of the synthesizer set up with a tom sound, so you effectively
 ## Schematics & Operation
 
 <div style="text-align:center">
-<img src="/Schematics/Drum pad trigger processing circuit.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Schematics/Drum pad trigger processing circuit.jpg" alt="" style="width:100%; height:auto;">
 </div>
 
 The basic principle was to derive a trigger pulse from a microphone or piezo-electric crystal which causes an interrupt 
@@ -45,7 +45,7 @@ Nine cloned circuits were built across 3 prototyping boards:
 Of which this shows a close-up of a single processing circuit:
 
 <div style="text-align:center">
-<img src="/Images/Close-up of one interface - Nov 1985.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Close-up of one interface - Nov 1985.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 ## Research and Development
