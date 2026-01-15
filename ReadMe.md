@@ -59,11 +59,11 @@ velocity) and the piezo transducer was used for a demonstration pickup which whe
 (it is VERY sensitive but output is not related to strike velocity).
 
 <div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - hard hit.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Piezo-Electric cystal output - hard hit.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - crystal hit directly.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Piezo-Electric cystal output - crystal hit directly.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 Referring to the circuit shown above, the microphone sensor's output is differentiated by an op-amp to produce to a short spike which is then amplified and rectified by the Superdiode IC1a. This spike quickly charges the tantalum cap then slowly discharges through the 4.7k (TC = 70msec). The output 
@@ -73,11 +73,11 @@ is crossed then the output swings to the +ve rail which is then differentiated t
 and is sent to the Z80-PIO which is programmed to interrupt on the rising edge of the pulse. 
 
 <div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - amplified and rectified output.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Piezo-Electric cystal output - amplified and rectified output.jpg" alt="" style="width50%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Piezo-Electric cystal output - amplified and rectified microphone output.jpg" alt="" style="width:75%; height:auto;">
+<img src="/Images/Piezo-Electric cystal output - amplified and rectified microphone output.jpg" alt="" style="width:50%; height:auto;">
 </div>
 
 After all of the research and development was complete, the pads worked perfectly - they can be tuned so very sensitive that air currents will 
